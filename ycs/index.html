@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>和林格尔多云算力调度平台</title>
+    <link rel="icon" href="../static/favicon.ico" mce_href="../static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/ycs.css">
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+</head>
+
+<body class="indexBody">
+    <!--PC header-->
+    <div>
+        <div class="header-box">
+            <a href="../index.html"
+                class="logo"><img src="../static/images/helin-logo.png" height="64"/><img class="iOpacity" src="../static/images/helin-logo.png" height="64"/></a>
+                <ul class="nav">
+                    <li>
+                        <a href="javascript:;" class="nav_a" style="pointer-events: none;">云超市</a>
+                    </li>
+                </ul>
+                <div class="headRx">
+                    <a href="../mine/index.html" class="headr_a1" style="color:#02A04E">我的资源</a>
+                </div>
+            </div>
+    </div>
+    <section class="content-box" style="padding: 0;">
+        <div class="left-box">
+            <div class="left-title">超算云</div>
+            <div class="left-content">
+                <a href="../ycs/index.html">有限元分析</a> | <a href="../ycs/index.html">流体力学</a> | <a href="../ycs/index.html">结构力学</a> | <a href="../ycs/index.html">电磁仿真</a> | <a href="../ycs/index.html">气象预报</a> | <a href="../ycs/index.html">环境模拟</a> |
+                <a href="../ycs/index.html">基因测序</a> | <a href="../ycs/index.html">药物研发</a> | <a href="../ycs/index.html">分子模拟</a> | <a href="../ycs/index.html">地震分析</a> | <a href="../ycs/index.html">计算物理</a> | <a href="../ycs/index.html">计算化学</a> |
+                <a href="../ycs/index.html">工业设计制造</a>
+            </div>
+            <div class="left-title">智算云</div>
+            <div class="left-content">
+                <a href="../ycs/index.html">NVIDIA Tesla V100</a> | <a href="../ycs/index.html">NVIDIA Tesla T4</a> | <a href="../ycs/index.html">NVIDIA Tesla P4</a> | <a href="../ycs/index.html">NVIDIA Tesla P100</a> | <a href="../ycs/index.html">NVIDIA A100</a> | <a href="../ycs/index.html">AMD GPU</a> | <a href="../ycs/index.html">NPU</a> | <a href="../ycs/index.html">容器GPU</a>
+            </div>
+            <div class="left-title">大数据云</div>
+            <div class="left-content">
+                <a href="../ycs/index.html">Dataworks</a><br /><a href="../ycs/index.html">Flink</a><br /><a href="../ycs/index.html">MaxCompute</a><br /><a href="../ycs/index.html">实时计算</a>
+            </div>
+            <div class="left-title">基础服务云</div>
+            <div class="left-content">
+                <a href="../ycs/index.html">ECS</a><br /><a href="../ycs/index.html">OSS</a><br /><a href="../ycs/index.html">Volume</a><br /><a href="../ycs/index.html">ESS</a>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="right-content">
+                <ul class="m2aic4ul fouritems" style="display: flex;justify-content: space-between;">
+                    <li>
+                        <div class="m2aic4t">
+                            <span>Tesla A100 PCle</span>高性能异构环境，适用大规模AI训练和HPC计算
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla A100-40G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                <div class="m2aic4dd-right"><span>40G * 8</span>显存</div>
+                            </dd>
+                            <dd><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox">
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>Tesla A100 PCle</span>适用1～8块AI训练和HPC计算 <strong style="color:transparent">高性能异构环境，</strong>
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla A100-40G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>128核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>512GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left" style="width:100%;"><span>支持1、2、4、8卡</span>包月</div>
+                            </dd>
+                            <dd><span>CentOS/Ubuntn/windows</span>os</dd>
+                            <dd class="trybtnbox">
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>Tesla A100 PCle</span>高性能异构环境，适用大规模AI训练和HPC计算
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla A100-40G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>88核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>350GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                <div class="m2aic4dd-right"><span>32G * 8</span>显存</div>
+                            </dd>
+                            <dd><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox">
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>Tesla A100 PCle</span>适用1～8块AI训练和HPC计算 <strong style="color:transparent">高性能异构环境，</strong>
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla A100-40G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>88核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>350GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left" style="width:100%;"><span>支持1、2、4、8卡</span>包月</div>
+                                <div class="m2aic4dd-right"><span></span></div>
+                            </dd>
+                            <dd><span>CentOS/Ubuntn/windows</span>os</dd>
+                            <dd class="trybtnbox">
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul class="m2aic4ul fouritems" style="display: flex;justify-content: space-between;">
+                    <li>
+                        <div class="m2aic4t"><span>Tesla V100 SXM2</span>适用1～8块AI训练和HPC计算 <strong style="color:transparent">高性能异构环境，</strong></div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla V100-40G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left" style="width:100%;"><span>支持1、2、4、8卡</span>包月</div>
+                                <div class="m2aic4dd-right"><span></span></div>
+                            </dd>
+                            <dd><span>CentOS/Ubuntn/windows</span>os</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t"><span>Tesla V100 SXM2</span>高性能异构环境，适用大规模AI训练和HPC计算</div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla V100-24G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>128核</span>vCPU</div>
+                                <div class="m2aic4dd-right"><span>512GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>2*50G Roce</span>高性能计算网络</div>
+                                <div class="m2aic4dd-right"><span>24G * 8</span>显存</div>
+                            </dd>
+                            <dd><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t"><span>Tesla V100 SXM2</span>适用1～8块AI训练和HPC计算 <strong style="color:transparent">高性能异构环境，</strong></div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla V100-32G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>88核</span>vCPU</div>
+                                <div class="m2aic4dd-right"><span>350GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left" style="width:100%;"><span>支持1、2、4、8卡</span>包月</div>
+                                <div class="m2aic4dd-right"><span></span></div>
+                            </dd>
+                            <dd><span>CentOS/Ubuntn/windows</span>os</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t"><span>Tesla V100 SXM2</span>高性能异构环境，适用大规模AI训练和HPC计算</div>
+                        <dl class="m2aic4dl">
+                            <dd><span>Nvidia Tesla V100-32G * 8</span>GPU类型</dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>88核</span>vCPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                <div class="m2aic4dd-right"><span>32G * 8</span>显存</div>
+                            </dd>
+                            <dd><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul class="m2aic4ul fouritems" style="display: flex;justify-content: space-between;">
+                    <li>
+                        <div class="m2aic4t">
+                            <span>NPU云服务器ebman1</span>自研深度神经网络加速器
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd>
+                                <span>神经网络</span>加速器
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left">
+                                    <span>48核</span>CPU
+                                </div>
+                                <div class="m2aic4dd-right">
+                                    <span>384GB</span>内存
+                                </div>
+                            </dd>
+                            <dd>
+                                <span>X-Dragon</span>架构
+                            </dd>
+                            <dd>
+                                <span>支持按卡和节点调度</span>按卡时和节点包月
+                            </dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>NPU云服务器ebman1</span>自研深度神经网络加速器
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd>
+                                <span>神经网络</span>加速器
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left">
+                                    <span>96核</span>CPU
+                                </div>
+                                <div class="m2aic4dd-right">
+                                    <span>384GB</span>内存
+                                </div>
+                            </dd>
+                            <dd>
+                                <span>X-Dragon</span>架构
+                            </dd>
+                            <dd>
+                                <span>支持按卡和节点调度</span>按卡时和节点包月
+                            </dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>NPU云服务器ebman1</span>自研深度神经网络加速器
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd>
+                                <span>神经网络</span>加速器
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left">
+                                    <span>128核</span>CPU
+                                </div>
+                                <div class="m2aic4dd-right">
+                                    <span>384GB</span>内存
+                                </div>
+                            </dd>
+                            <dd>
+                                <span>X-Dragon</span>架构
+                            </dd>
+                            <dd>
+                                <span>支持按卡和节点调度</span>按卡时和节点包月
+                            </dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>NPU云服务器ebman1</span>自研深度神经网络加速器
+                        </div>
+                        <dl class="m2aic4dl">
+                            <dd>
+                                <span>神经网络</span>加速器
+                            </dd>
+                            <dd>
+                                <div class="m2aic4dd-left">
+                                    <span>96核</span>CPU
+                                </div>
+                                <div class="m2aic4dd-right">
+                                    <span>350GB</span>内存
+                                </div>
+                            </dd>
+                            <dd>
+                                <span>X-Dragon</span>架构
+                            </dd>
+                            <dd>
+                                <span>支持按卡和节点调度</span>按卡时和节点包月
+                            </dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul class="m2aic4ul fouritems" style="display: flex;justify-content: space-between;">
+                    <li>
+                        <div class="m2aic4t">
+                            <span>云服务器S6</span>适用于轻量级企业应用、及轻量级数据库、缓存等<strong style="color:transparent">及轻量级数据库、缓存</strong>
+                        </div>
+                        <dl class="m2aic4dl" >
+                            <dd class="dlshow2">
+                                <p><span>主机规格</span>1核1G</p>
+                                <p><span>地域</span>华北3（张家口）</p>
+                                <p><span>系统盘</span>20G高校云盘</p>
+                                <p><span>带宽</span>1M</p>
+                                <p><span>时长</span>1个月</p>
+                            </dd>
+                            <dd class="dlhide"><span>计算型 ebman1</span>NPU</dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>含光800</span>加速器</div>
+                                <div class="m2aic4dd-right"><span>X-Dragon</span>架构</div>
+                            </dd>
+                            <dd class="dlhide"><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t">
+                            <span>DataWorks+MaxCompute</span>快速落地企业大数据开发与治理平台。
+                        </div>
+
+                        <dl class="m2aic4dl" style="position: absolute;bottom: 0;">
+                            <dd class="dlshow">
+                                <p><span class="dlshow-icon"></span>企业数据中台建设</p>
+                                <p><span class="dlshow-icon"></span>Saas模式云数据仓库<strong style="color:transparent">据仓库</strong></p>
+                                <p><span class="dlshow-icon"></span>全链路数据开发治理<strong style="color:transparent">治理</strong></p>
+                            </dd>
+                            <dd class="dlhide"><span>计算型 ebman1</span>NPU</dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>含光800</span>加速器</div>
+                                <div class="m2aic4dd-right"><span>X-Dragon</span>架构</div>
+                            </dd>
+                            <dd class="dlhide"><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="m2aic4t"><em class="m2aic4-tip"></em><span>DataWorks企业版<strong style="color:transparent">企业版</strong></span>提供强大的API定制功能与数据安全功能。
+                        </div>
+                        <dl class="m2aic4dl" style="position: absolute;bottom: 0;">
+                            <dd class="dlshow">
+                                <p><span class="dlshow-icon"></span>提供OpenAPI开放能力</p>
+                                <p><span class="dlshow-icon"></span>完整数据安全能力<strong style="color:transparent">安全能力</strong></p>
+                                <p><span class="dlshow-icon"></span>自定义资源组<strong style="color:transparent">定义资源组</strong></p>
+                            </dd>
+                            <dd class="dlhide"><span>计算型 ebman1</span>NPU</dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>含光800</span>加速器</div>
+                                <div class="m2aic4dd-right"><span>X-Dragon</span>架构</div>
+                            </dd>
+                            <dd class="dlhide"><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+
+                    </li>
+                    <li>
+
+                        <div class="m2aic4t"><em class="m2aic4-tip"></em><span>DataWorks智能数据建模</span>构建数仓规范与标准。<strong style="color:transparent">构建数仓规范与标准</strong>
+                        </div>
+                        <dl class="m2aic4dl" style="position: absolute;bottom: 0;">
+                            <dd  class="dlshow">
+                                <p><span class="dlshow-icon"></span>支持冷启动，快速建模</p>
+                                <p><span class="dlshow-icon"></span>批量创建指标，重复性检测</p>
+                                <p><span class="dlshow-icon"></span>数仓规范化，可持续发展</p>
+                            </dd>
+                            <dd class="dlhide"><span>计算型 ebman1</span>NPU</dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>96核</span>CPU</div>
+                                <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                            </dd>
+                            <dd class="dlhide">
+                                <div class="m2aic4dd-left"><span>含光800</span>加速器</div>
+                                <div class="m2aic4dd-right"><span>X-Dragon</span>架构</div>
+                            </dd class="dlhide">
+                            <dd class="dlhide"><span>支持按卡和节点调度</span>按卡时和节点包月</dd>
+                            <dd class="trybtnbox" >
+                                <a style="color: #fff;" href="./apply.html">立即试用</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="webNmenuWpr"><ul class="webNmenu"><li><a href="javascript:;" class="webNmenu_a"><div class="webNrm_ico"><img src="../static/images/rri1.png" width="24" height="24"/></div><p>反馈</p></a></li><li><a href="javascript:;" class="webNmenu_a proTryBtn"><div class="webNrm_ico"><img src="../static/images/rri2.png" width="24" height="24"/></div><p>关于</p></a></li></ul></div>
+    <script language="javascript">
+        $(".left-t1 span").click(function (items, i) {
+            $(".left-t1 span.active").removeClass("active");
+            $(this).addClass("active");
+        })
+        $(".left-t2 span").click(function (items, i) {
+            $(".left-t2 span.active").removeClass("active");
+            $(this).addClass("active");
+        })
+    </script>
+
+    <script src="../static/js/app.js"></script>
+    <script src="../static/js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.image-box {
+    width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.smkxbantxt p{
+    max-width: 500px;
+}
+.smkxbantxt p:not(:nth-child(2)){
+    margin-top: 0;
+}

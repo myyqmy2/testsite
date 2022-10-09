@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>和林格尔多云算力调度平台</title>
+    <link rel="icon" href="../static/favicon.ico" mce_href="../static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/jquery-ui.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/ycs.css">
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script src="../static/js/jquery-ui.js"></script>
+</head>
+
+<body class="indexBody">
+
+    <!--PC header-->
+    <div>
+        <div class="header-box">
+            <a href="../index.html"
+                class="logo"><img src="../static/images/helin-logo.png" height="64"/><img class="iOpacity" src="../static/images/helin-logo.png" height="64"/></a>
+        </div>
+    </div>
+    <section class="title-box">
+        <div class="title-content-box applyContainer">
+            <p class="breadcast">云超市/算力申请</p>
+            <div class="title-content active">
+                <div class="title-icon"><img src="../static/images/helin-tanxingjisuan.png" alt=""></div>
+                <div class="title-text">
+                    <p class="titel-text1">E-HPC</p>
+                    <p class="titel-text2">提供性能卓越、稳定可靠、弹性扩展的高性能计算服务。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block1 applyContainer">
+        <div class="block-title">
+        产品规格
+        </div>
+        <div class="block1-content">
+            <div>
+                <div><span style="margin-right: 20px;">算力类型</span><span><input type="radio" name="type" id="cpu" value="cpu"> CPU<input style="margin-left: 20px;"type="radio" name="type" id="gpu" value="gpu"> GPU</span></div>
+                <ul class="m2csy_c2Top" style="margin-top:20px;padding: 0px;">
+                    <li style="width:100%;box-shadow:none;padding-left: 77px;margin-top:0px;border:none;">
+                        <strong style="width: 72px;text-align: right;font-size: 14px;left:-16px;">软件分类</strong>
+                        <div id="show_soft_type" style="width:85%;"></div>
+                    </li>
+                    <li style="width:100%;box-shadow:none;padding-left: 77px;margin-top:0px;">
+                        <strong style="width: 72px;text-align: right;font-size: 14px;left:-16px;">应用</strong>
+                        <div id="show_soft_list" style="width:85%;"></div>
+                    </li>
+                </ul>
+                <div class="m2aic4ul show1" data-wow-delay="0.2s">
+
+                    <div class="m2csyTable show2" style="width:80%;box-shadow:none;padding-left: 77px;position: relative;">
+                        <strong style="width: 63px;text-align: right;left:-7px;">规格</strong>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="show_resource_info_list">
+                        </table>
+                    </div>
+                </div>
+                <div class="m2aic4ul show2" data-wow-delay="0.2s">
+                    <div class="m2csyTable show2" style="width:95%;box-shadow:none;padding-left: 77px;position: relative;">
+                        <strong style="width: 63px;text-align: right;left:-7px;">规格</strong>
+                        <ul class="m2aic4ul fouritems" style="display: flex;justify-content: space-between;align-items: flex-start;">
+                            <li  style="margin-top: 6px;" class="card active">
+                                <div class="m2aic4t nochoice">
+                                    <span>Tesla V100 PCle</span>高性能异构环境，适用大规模AI训练和HPC计算
+                                </div>
+                                <dl class="m2aic4dl">
+                                    <dd><span>Nvidia Tesla V100-40G * 8</span>GPU类型</dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>48核</span>CPU</div>
+                                        <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                        <div class="m2aic4dd-right"><span>40G * 8</span>显存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>7 TFLOPS</span>双精度性能</div>
+                                        <div class="m2aic4dd-right"><span>14 TFLOPS</span>单精度性能</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>112 TFLOPS</span>张量(Tensor)性能</div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li style="margin-top: 6px;" class="card">
+                                <div class="m2aic4t nochoice"><span>Tesla V100 SXM2</span>高性能异构环境，适用大规模AI训练和HPC计算</div>
+                                <dl class="m2aic4dl">
+                                    <dd><span>Nvidia Tesla V100-32G * 8</span>GPU类型</dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>88核</span>CPU</div>
+                                        <div class="m2aic4dd-right"><span>350GB</span>内存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                        <div class="m2aic4dd-right"><span>32G * 8</span>显存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>7.8 TFLOPS</span>双精度性能</div>
+                                        <div class="m2aic4dd-right"><span>15.7 TFLOPS</span>单精度性能</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>125 TFLOPS</span>张量(Tensor)性能</div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li style="margin-top: 6px;"  class="card">
+                                <div class="m2aic4t nochoice">
+                                    <span>Tesla V100S PCle</span>高性能异构环境，适用大规模AI训练和HPC计算
+                                </div>
+                                <dl class="m2aic4dl">
+                                    <dd><span>Nvidia Tesla V100S-40G * 8</span>GPU类型</dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>96核</span>CPU</div>
+                                        <div class="m2aic4dd-right"><span>384GB</span>内存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                        <div class="m2aic4dd-right"><span>40G * 8</span>显存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>8.2 TFLOPS</span>双精度性能</div>
+                                        <div class="m2aic4dd-right"><span>16.4 TFLOPS</span>单精度性能</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>130 TFLOPS</span>张量(Tensor)性能</div>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li style="margin-top: 6px;" class="card">
+                                <div class="m2aic4t nochoice"><span>GPU云服务器gn6v</span>最高配置8张NVIDIA计算卡,336G DDR4内存</div>
+                                <dl class="m2aic4dl">
+                                    <dd><span>GPU云服务器gn6v V100</span>GPU类型</dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>8核</span>CPU</div>
+                                        <div class="m2aic4dd-right"><span>32GB</span>内存</div>
+                                    </dd>
+                                    <dd>
+                                        <div class="m2aic4dd-left"><span>100G Roce</span>高性能计算网络</div>
+                                        <div class="m2aic4dd-right"><span>16G</span>显存</div>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block1 applyContainer">
+        <div class="block-title">
+        资源环境
+        </div>
+        <div class="block1-content">
+            <div>
+                <div><span style="margin-right: 20px;">调度方式</span><span><input type="radio"  name="zdfs"id="zntj" value="zntj" checked> AI智能调度<input style="margin-left: 20px;"type="radio" name="zdfs" id="zdxz" value="zdxz"> 直接分配</span></div>
+            </div>
+            <div class="zyc m2csyTable"style="width:95%;box-shadow:none;padding-left: 77px;position: relative;">
+                <strong style="width: 63px;text-align: right;">资源池：</strong>
+                <div style="display:flex;flex-direction: row;flex-wrap: wrap;">
+                    <div class="zyc1 on">
+                        <div><p><span class="zyc1-icon"><img src="../static/images/gxnzyc.png" alt=""></span>直营店高性能计算资源池1</p><span></span><span class="zyc1-icon2"><img src="../static/images/wxz.png" alt=""></span><span  class="zyc1-icon3"><img src="../static/images/xz.png" alt=""></span></div>
+                        <div>算力（13467/234578）</div>
+                        <div>费用 0.002/核分</div>
+                    </div> 
+                    <div class="zyc1">
+                        <div><p><span class="zyc1-icon"><img src="../static/images/gxnzyc.png" alt=""></span>直营店高性能计算资源池2</p><span></span><span class="zyc1-icon2"><img src="../static/images/wxz.png" alt=""></span><span  class="zyc1-icon3"><img src="../static/images/xz.png" alt=""></span></div>
+                        <div>算力（13467/234578）</div>
+                        <div>费用 0.002/核分</div>
+                    </div>
+                    <div class="zyc1">
+                        <div><p><span class="zyc1-icon"><img src="../static/images/alzyc.png" alt=""></span>阿里云高性能计算资源池1</p><span></span><span class="zyc1-icon2"><img src="../static/images/wxz.png" alt=""></span><span  class="zyc1-icon3"><img src="../static/images/xz.png" alt=""></span></div>
+                        <div>算力（13467/234578）</div>
+                        <div>费用 0.003/核分</div>
+                    </div>    
+                    <div class="zyc1">
+                        <div><p><span class="zyc1-icon"><img src="../static/images/alzyc.png" alt=""></span>阿里云高性能计算资源池2</p><span></span><span class="zyc1-icon2"><img src="../static/images/wxz.png" alt=""></span><span  class="zyc1-icon3"><img src="../static/images/xz.png" alt=""></span></div>
+                        <div>算力（13467/234578）</div>
+                        <div>费用 0.003/核分</div>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="block1 applyContainer" style="margin-bottom:100px">
+        <div class="block-title">
+        算力计费
+        </div>
+        <div class="block1-content">
+            <div>
+                <div><span style="margin-right: 20px;">计费方式</span><span><input type="radio"  name="slb"id="hs" value="hs" > 核时后计费<input style="margin-left: 20px;"type="radio" name="slb" id="bn" value="bn" checked> 核时包年</span></div>
+                <div class="slb m2csyTable" style="margin-top: 19px;margin-bottom: 19px;width:95%;box-shadow:none;padding-left: 77px;position: relative;">
+                    <strong style="width: 56px;text-align: right;">算力包</strong>
+                    <span><ul class="slb-list">
+                        <li class="active">CPU 100核时（1年）</li>
+                        <li>CPU 300核时（1年）</li>
+                        <li>CPU 500核时（1年）</li>
+                        <li>CPU 1000核时（1年）</li>
+                    </ul></span>
+                </div>
+                <div class="slide m2csyTable" style="margin-top: 19px;margin-bottom: 19px;width:95%;box-shadow:none;padding-left: 77px;position: relative;">
+                    <strong style="width: 56px;text-align: right;">时长(时)</strong>
+                    <div id="slider" class="slider-box"></div>
+                    <input type="text" id="number" style="border:0;">
+                </div>
+                <div><span style="width: 56px;text-align: right;display: inline-block;">数量</span><span><input type="number" id="number" style="border:0;width: 55px;" value="1"></span></div>
+            </div>
+        </div>
+    </section>
+    <section class="paybar" >
+        <div class="paybar-box applyContainer">
+            <div>预估费用：￥ <span class="paycount">0.00</span></div>
+            <div class="paybtns">
+                <button class="btn1">加入购物车</button>
+                <button class="btn2"><a href="../mine/index.html" style="width: 100%;height:100%;color:#fff">立即购买</a></button>
+                <button class="btn3">取消</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="webNmenuWpr"><ul class="webNmenu"><li><a href="javascript:;" class="webNmenu_a"><div class="webNrm_ico"><img src="../static/images/rri1.png" width="24" height="24"/></div><p>反馈</p></a></li><li><a href="javascript:;" class="webNmenu_a proTryBtn"><div class="webNrm_ico"><img src="../static/images/rri2.png" width="24" height="24"/></div><p>关于</p></a></li></ul></div>
+
+    <script src="../static/js/app.js"></script>
+    <script src="../static/js/common.js"></script>
+
+    <script type="text/javascript">
+        var dataMap = {
+            '有限元分析': ['ANSYS','NASTRAN','ABACUS','LS-DYNA','PAM-CRASH','HyperWorks','RADIOSS','MSC.PATRAN'],
+            '流体力学': ['Ansys Fluent','Ansys CFX','CD-adapco','CFX','STAR-CD','FASTRAN','EXA Powerflow','STARCCM+','Mathematica','Cradle'],
+            '结构力学': ['ABAQUS','Ansys Mechanical','Nastran','Pam-Crash','MSC.NASTRAN','MSC.MARC'],
+            '电磁仿真': ['Agilent ADS','Agilent Empro','EMSS Feko','Ansys HFSS','HOBBIES','CST EM Studio'],
+            '气象预报': ['MM5','WRF','GRAPES','AREMS'],
+            '环境模拟': ['FVCOM','ROMS','POM','HYCOM','CMAQ','CCSM3','CAM','RAxML','migrate','MrBayes'],
+            '基因测序': ['BLAST','ClustalW','Censor RepeatMasker','BOWTIE2','PHYLIP'],
+            '药物研发': ['DOCK AutoDock','Discovery Stuio','ZDOCK','MORDOR'],
+            '分子模拟': ['CP2K','CPMD','NAMD','GROMACS','CHARMM','AutoDock','AMBER','DOCK','LAMMPS','Meterial Studio','SAMtools','EspressoMD','VASP','ADF','ATK','Abinit','CPMD','WIEN2K'],
+            '地震分析': ['GeoEast','Omega','Geodepth','Geovector','Promax','Focus'],
+            '计算物理': ['ABINIT','Phonopy','ESPRESSO','CosmoMC','Gadget2','SIESTA'],
+            '计算化学': ['ACES II','GAMESS','Gaussian','NWChem','DIRAC'],
+            '工业设计制造': ['FDS','OpenFOAM','Maya','3Ds Max','XSI','Lightwave 3D','Renderman','Mental Ray','Enfuzion','Qube','Muster','Drqueue']
+        }
+        var typeList = Object.keys(dataMap);
+        var softList = dataMap[typeList[0]];
+        var dataList = [{"name":"CP2K ","id":23},
+                        {"name":"LAMMPS","id":22},
+                        {"name":"WRF","id":21},
+                        {"name":"FVCOM","id":20},
+                        {"name":"OpenFOAM","id":19},
+                        {"name":"NAMD","id":18},
+                        {"name":"ROMS","id":17},
+                        {"name":"octopus","id":16},
+                        {"name":"QE","id":15},
+                        {"name":"Python","id":14},
+                        {"name":"bowtie2","id":13},
+                        {"name":"BWA","id":12},
+                        {"name":"CFDEM","id":11},
+                        {"name":"COAWST","id":10},
+                        {"name":"VASP","id":9},
+                        {"name":"MS","id":8},
+                        {"name":"ANSYS FLUENT","id":7},
+                        {"name":"ANSYS CFX","id":6},
+                        {"name":"ANSYS WORKBENCH","id":5},
+                        {"name":"ANSYS MECHANICAL","id":4},
+                        {"name":"Gaussian","id":3},
+                        {"name":"COMSOL","id":2},
+                        {"name":"MATLAB","id":1}];
+        var infoList = [{"speciality":"37","memory":"256","mainPin":"2.35","feng":"2.35","cenNum":"64","areas":"A、A2、A3、A5、A6","id":10,"net":"56","cpuInfo":"2颗AMD EPYC 7452"},
+                        {"speciality":"41.6","memory":"512","mainPin":"2.60","feng":"5.20","cenNum":"128","areas":"M、M6","id":8,"net":"56","cpuInfo":"2颗AMD EPYC 7H12"},
+                        {"speciality":"60","memory":"64","mainPin":"2.50","feng":"0.94","cenNum":"24","areas":"9","id":6,"net":"56","cpuInfo":"2颗Intel Xeon E5-2678 V3"},
+                        {"speciality":"80","memory":"192","mainPin":"2.50","feng":"3.75","cenNum":"48","areas":"E","id":5,"net":"56","cpuInfo":"2颗Intel Xeon Platinum 8163"},
+                        {"speciality":"73.6","memory":"384","mainPin":"2.30","feng":"6.90","cenNum":"96","areas":"T、T6","id":4,"net":"100","cpuInfo":"2颗Intel Xeon Platinum 9242"},
+                        {"speciality":"26.4","memory":"64","mainPin":"2.20","feng":"0.41","cenNum":"24","areas":"GZ","id":3,"net":"100","cpuInfo":"2颗Intel Xeon E5-2692 V2"},
+                        {"speciality":"86.4","memory":"192","mainPin":"2.70","feng":"4.725","cenNum":"56","areas":"JN","id":2,"net":"100","cpuInfo":"2颗Intel Xeon Gold 6258R"},
+                        {"speciality":"8","memory":"128","mainPin":"2.00","feng":"0.25","cenNum":"32","areas":"XDSC","id":1,"net":"200","cpuInfo":"1颗国产Hygon C86"}];
+        $(function () {
+            load_type_list();
+            load_soft_list();
+            load_resource_info_list();
+            $('input:radio[name="type"]').eq(1).attr("checked",true);
+            $(".show2").addClass('on');
+            $('input:radio[name="type"]').change(function () {
+                var vel = $('input:radio[name="type"]:checked').val();
+                console.log('change',vel, $('input:radio[name="type"]:checked').val())
+                if (vel == 'cpu') {
+                    $(".show2").removeClass('on');
+                    $(".show1").addClass('on');
+                } else {
+                    $(".show1").removeClass('on');
+                    $(".show2").addClass('on');
+                }
+            })
+            $('input:radio[name="zdfs"]').change(function () {
+                var vel = $('input:radio[name="zdfs"]:checked').val();
+                console.log('change',vel, $('input:radio[name="zdfs"]:checked').val())
+                if (vel == 'zdxz') {
+                    $(".zyc").show();
+                } else {
+                    $(".zyc").hide();
+                }
+            })
+            $('input:radio[name="slb"]').change(function () {
+                var vel = $('input:radio[name="slb"]:checked').val();
+                console.log('change',vel, $('input:radio[name="slb"]:checked').val())
+                if (vel === 'hs') {
+                    $(".slb").hide();
+                    $(".slide").show();
+                } else {
+                    $(".slb").show();
+                    $(".slide").hide();
+                }
+            })
+            $('li.card').click(function () {
+                $("li.card.active").removeClass("active");
+                $(this).addClass("active");
+            })
+            $('.zyc1').click(function () {
+                $(".zyc1.on").removeClass("on");
+                $(this).addClass("on");
+            })
+            $('.slb-list li').click(function () {
+                $(".slb-list .active").removeClass("active");
+                $(this).addClass("active");
+            })
+            $('.show_soft_list').on('click','a',function () {
+                $("#show_soft_list a.on").removeClass("on");
+             $(this).addClass("on");
+            })
+
+            $( "#slider" ).slider({
+                range: "max",
+                min: 1,
+                max: 100,
+                value: 20,
+                slide: function( event, ui ) {
+                    $( "#number" ).val( ui.value );
+                }
+            });
+            $( "#number" ).val( $( "#slider" ).slider( "value" ) );
+        })
+        function changeType(index) {
+            $("#show_soft_type > a").removeClass("on");
+            $("#show_soft_type > a").eq(index).addClass("on");
+            console.log(index)
+            if(index) {
+                softList = dataMap[typeList[index-1]]
+            }else {
+                softList = Object.values(dataMap).flat();
+            }
+            load_soft_list();
+        }
+        function changeSoft(index) {
+            $("#show_soft_list > a").eq(index).toggleClass("on");
+        }
+        function load_resource_info_list() {
+            var showData = "<tr>" +
+                "<td>单节点CPU配置</td>" +
+                "<td>单节点总核数</td>" +
+                "<td>主频<br>（GHz）</td>" +
+                "<td>单节点内存<br>（GB）</td>" +
+                "<td>单节点峰值性能<br>（Tflops）</td>" +
+                "<td>单核峰值性能<br>(Gflops)</td>" +
+                "<td>网络带宽<br>（Gbps）</td>" +
+                "</tr>";
+            if(infoList.length == 0){
+                showData += "<tr><td colspan='8' align='center'>暂无数据</td></tr>";
+            }else{
+                for(var i in infoList){
+                    var oneInfo = infoList[i];
+                    var tag = i == 0 ? 'checked' : ''
+                    console.log(i,tag)
+                    //console.log(oneInfo.id+"--"+oneInfo.title);
+                    var oneData = "<tr>" +
+                        "<td style='position:relative;padding-left:22px;'><input type='radio' name='guige'style='position: absolute;left: 5px;'"+  tag +"/>"+oneInfo.cpuInfo+"</td>" +
+                        "<td>"+oneInfo.cenNum+"</td>" +
+                        "<td>"+oneInfo.mainPin+"</td>" +
+                        "<td>"+oneInfo.memory+"</td>" +
+                        "<td>"+oneInfo.feng+"</td>" +
+                        "<td>"+oneInfo.speciality+"</td>" +
+                        "<td>"+oneInfo.net+"</td>" +
+                        "</tr>";
+                    showData += oneData;
+                }
+            }
+            $("#show_resource_info_list").html(showData);
+        }
+        function load_type_list() {
+            var showType = "<a href='javascript:void(0)' id='soft_a_0' onclick='changeType(0)'>全部</a>";
+            for(let i = 0; i < typeList.length; i ++){
+                var oneDataJson1 = typeList[i];
+                var oneData1 = "<a href='javascript:void(0)' class='"+ (i === 0 ? 'on' : '') +"' id='soft_a_"+i+"' onclick='changeType(" + (i+1) + ")'>"+oneDataJson1+"</a>";
+                showType += oneData1;
+            }
+            $("#show_soft_type").html(showType);
+        }
+        function load_soft_list() {
+            var showSoft = "";
+            for(let i = 0; i < softList.length; i ++){
+                var oneDataJson2 = softList[i];
+                var oneData2 = "<a href='javascript:void(0)' class='"+ (i === 0 ? 'on' : '') +"' id='soft_a_"+i+"' onclick='changeSoft(" + (i) + ")'>"+oneDataJson2+"</a>";
+                showSoft += oneData2;
+            }
+            $("#show_soft_list").html(showSoft);
+        }
+    </script>
+</body>
+
+</html>

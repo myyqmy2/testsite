@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>和林格尔多云算力调度平台</title>
+    <link rel="icon" href="../static/favicon.ico" mce_href="../static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/mine.css">
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+</head>
+
+<body class="indexBody" style="background:#F4F5F6;width:100%">
+        <video id="video" muted width="100%" height="100%"  autoplay="autoplay" controls>
+            <source src="../static/videos/yunzhuomian.mp4" type="video/mp4">
+          您的浏览器不支持该视频。
+        </video>
+    <script src="../static/js/app.js"></script>
+    <script src="../static/js/common.js"></script>
+    <script>
+        let video = document.getElementById("video");
+        let videoPlay = video.play();
+        videoPlay.then(()=>{
+            console.log('可以自动播放');
+        }).catch((err)=>{
+            console.log(err);
+            console.log("不允许自动播放");
+
+            //视频元素可以选择静音后再播放,提示用户打开声音
+            video.muted=true;
+            video.play();
+
+            //也可以在用户交互后调用.play()
+            // ...
+        });
+    </script>
+</body>
+
+</html>
